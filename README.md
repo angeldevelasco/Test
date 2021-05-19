@@ -13,3 +13,20 @@ A single string that represents a time in 12-hour clock format (i.e.: hh:mm:ss:A
 Create a specific function for the conversion
 
 ## Problem 2
+Given an array of integers, find the sum of its elements, max and min values.
+
+For example, if the array ar=[1,2,3], 1+2+3=6 so return 6 3 1.
+
+#### Example Input
+[10,2,3,4,8,2]
+#### Example Output
+29 10 2
+#### Extra
+Use arrow functions
+
+## Extra Problem
+Using classes create a rectangle object, which will return the area once it is instantiated
+#### Example Input
+new rectangle(2,3)
+#### Example Output
+6
