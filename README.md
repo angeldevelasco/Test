@@ -24,6 +24,28 @@ For example, if the array ar=[1,2,3], 1+2+3=6 so return 6 3 1.
 #### Extra
 Use arrow functions
 
+## Problem 3
+Staircase detail
+This is a staircase of size n=4:
+
+       .
+      ..
+     ...
+    ....
+Its base and height are both equal to n. It is drawn using . symbols and spaces. The last line is not preceded by any spaces.
+Write a program that prints a staircase of size n.
+#### Example Input
+6
+#### Example Output
+         .
+        ..
+       ...
+      ....
+     .....
+    ......
+#### Extra
+Print the staircase upside down
+
 ## Extra Problem
 Using classes create a rectangle object, which will return the area once it is instantiated
 #### Example Input
