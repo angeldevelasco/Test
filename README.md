@@ -6,7 +6,7 @@ Note: - 12:00:00AM on a 12-hour clock is 00:00:00 on a 24-hour clock.
 #### Example Input
 A single string that represents a time in 12-hour clock format (i.e.: hh:mm:ss:AM or hh:mm:ss:PM).
 
-'12:01:00:PM'
+'12:01:00:AM'
 #### Example Output
 '00:01:00'
 #### Extra
