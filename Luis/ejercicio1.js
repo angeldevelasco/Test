@@ -14,7 +14,7 @@ a 12-hour clock is 00:00:00 on a 24-hour clock. 12:00:00PM on a 12-hour clock is
 //Extra
 //Create a specific function for the conversion
 
-var entrada="01:01:00AM";
+var entrada="11:01:00PM";
 var salida="";
 
 console.log("Hora de entrada :" + entrada);
@@ -71,17 +71,29 @@ function cambiar(entrada)
             }   
             else
             {
-                num1= parseInt(entrada[0]);
-                num2= parseInt(entrada[1]);
-
-                num1=num1+1;
-                num2=num2+2;
-
-                salida=salida.concat(num1,num2);
-                for (i = 2; i < entrada.length-2; i++)
-                 {
-                    salida=salida.concat(entrada[i]);
+                if((entrada[0]=="1") && (entrada[1]=="2") && (entrada[8]=="P"))
+                {
+                   
+                    for (i = 0; i < entrada.length-2; i++)
+                    {
+                        salida=salida.concat(entrada[i]);
+                    }
                 }
+                else
+                {
+                    num1= parseInt(entrada[0]);
+                    num2= parseInt(entrada[1]);
+    
+                    num1=num1+1;
+                    num2=num2+2;
+    
+                    salida=salida.concat(num1,num2);
+                    for (i = 2; i < entrada.length-2; i++)
+                     {
+                        salida=salida.concat(entrada[i]);
+                    }
+                }
+               
             }
         }
     }
