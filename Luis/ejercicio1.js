@@ -14,7 +14,7 @@ a 12-hour clock is 00:00:00 on a 24-hour clock. 12:00:00PM on a 12-hour clock is
 //Extra
 //Create a specific function for the conversion
 
-var entrada="11:01:00PM";
+var entrada="09:01:00:PM";
 var salida="";
 
 console.log("Hora de entrada :" + entrada);
@@ -23,14 +23,14 @@ console.log("Hora de salida :" + salida);
 
 function cambiar(entrada)
 {
-    if (entrada[8]=="A")
+    if (entrada[9]=="A")
     {
         if((entrada[0]=="1") && (entrada[1]=="2"))
         {
             num= 0;
             num2= 0;
             salida=salida.concat(num,num2);
-            for (i = 2; i < entrada.length-2; i++)
+            for (i = 2; i < entrada.length-3; i++)
             {
                 salida=salida.concat(entrada[i]);
             }
@@ -38,7 +38,7 @@ function cambiar(entrada)
         }
         else
         {
-            for (i = 0; i < entrada.length-2; i++)
+            for (i = 0; i < entrada.length-3; i++)
             {
             salida=salida.concat(entrada[i]);
             }
@@ -47,34 +47,34 @@ function cambiar(entrada)
     }
     else
     {
-        if((entrada[1]=="8") && (entrada[8]=="P"))
+        if((entrada[1]=="8") && (entrada[9]=="P"))
         {
          num= 2;
          num2= 0;
          salida=salida.concat(num,num2);
-        for (i = 2; i < entrada.length-2; i++)
+        for (i = 2; i < entrada.length-3; i++)
             {
                 salida=salida.concat(entrada[i]);
             }
         }
         else
         {
-            if((entrada[1]=="9") && (entrada[8]=="P"))
+            if((entrada[1]=="9") && (entrada[9]=="P"))
             {
                  num= 2;
                  num2= 1;
                 salida=salida.concat(num,num2);
-                for (i = 2; i < entrada.length-2; i++)
+                for (i = 2; i < entrada.length-3; i++)
                 {
                     salida=salida.concat(entrada[i]);
                 }
             }   
             else
             {
-                if((entrada[0]=="1") && (entrada[1]=="2") && (entrada[8]=="P"))
+                if((entrada[0]=="1") && (entrada[1]=="2") && (entrada[9]=="P"))
                 {
                    
-                    for (i = 0; i < entrada.length-2; i++)
+                    for (i = 0; i < entrada.length-3; i++)
                     {
                         salida=salida.concat(entrada[i]);
                     }
@@ -88,7 +88,7 @@ function cambiar(entrada)
                     num2=num2+2;
     
                     salida=salida.concat(num1,num2);
-                    for (i = 2; i < entrada.length-2; i++)
+                    for (i = 2; i < entrada.length-3; i++)
                      {
                         salida=salida.concat(entrada[i]);
                     }
