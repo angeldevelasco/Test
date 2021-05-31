@@ -38,6 +38,7 @@ piramide(n);
 
 console.log("Escalera volteado:");
 
+//Extra
 const piramide2 =  n  => 
 {
    for(i=n; i>0; i--)
