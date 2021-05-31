@@ -17,21 +17,26 @@ var max, min, sum;
 sum=0;
 max= min = num[0];
 
-for (i = 0; i < num.length; i++)
+const numeros = num =>
 {
-    if(num[i]>max)
+    for (i = 0; i < num.length; i++)
     {
-        max=num[i];
-    }
+        if(num[i]>max)
+        {
+            max=num[i];
+        }
 
-    if(num[i]<min)
-    {
-        min=num[i];
-    }
+        if(num[i]<min)
+        {
+            min=num[i];
+        }
 
-    sum=sum + num[i];
+        sum=sum + num[i];
+    }
+    console.log(`Sumatoria :${sum}  Max:${max}  Min:${min}`);
 }
-console.log("Sumatoria :%d  Max:%d  Min:%d", sum, max, min);
+
+numeros(num);
 
 
 
